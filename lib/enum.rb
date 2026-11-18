@@ -110,3 +110,5 @@ class Unit::Millimeters
     1000
   end
 end
+
+Measure[5, Unit.km].convert(Unit.m)
