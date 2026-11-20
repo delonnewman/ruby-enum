@@ -47,7 +47,9 @@ class Union
     freeze
   end
 
-  def to_s = @name.to_s
+  def to_sym = @name.to_sym
+  def to_str = @name.to_s
+  alias to_s to_str
     
   def inspect
     "#<union #{self.class.superclass} #{@name}>"
