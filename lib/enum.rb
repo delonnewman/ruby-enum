@@ -190,5 +190,5 @@ Measure = Data.define(:amount, :unit) do
   alias inspect to_s
 end
 
-Measure[5, :km].in(:m)
+Measure[5, :km] >> :m
 
